@@ -71,4 +71,5 @@ func DeleteUser(c *gin.Context) {
 	} else {
 		c.JSON(http.StatusOK, gin.H{"id" + id: "is deleted"})
 	}
+
 }

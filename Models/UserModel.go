@@ -1,13 +1,16 @@
 package Models
 
+// User Table Model
 type User struct {
-	Id      uint   `json:"id"`
+	ID      uint   `json:"id"`
 	Name    string `json:"name"`
 	Email   string `json:"email"`
 	Phone   string `json:"phone"`
 	Address string `json:"address"`
 }
 
+// TableName tb_user
 func (b *User) TableName() string {
-	return "user"
+	return "tb_user"
+
 }
